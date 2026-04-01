@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Consulta de Informações</title>
+<title>Consulta de Informações Online</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
@@ -18,13 +18,13 @@ font-family:'Inter',sans-serif;
 }
 
 body{
-background:#f1f5f9;
+background:#f8fafc;
 color:#0f172a;
 }
 
 /* HEADER */
 .header{
-background:#2563eb;
+background:#0f172a;
 color:white;
 padding:15px;
 text-align:center;
@@ -33,7 +33,7 @@ font-weight:600;
 
 /* CONTAINER */
 .container{
-max-width:900px;
+max-width:1000px;
 margin:auto;
 padding:25px;
 }
@@ -41,46 +41,72 @@ padding:25px;
 /* HERO */
 .hero{
 background:white;
-padding:25px;
-border-radius:12px;
-box-shadow:0 10px 30px rgba(0,0,0,0.1);
+padding:30px;
+border-radius:14px;
+box-shadow:0 15px 40px rgba(0,0,0,0.08);
 text-align:center;
 }
 
 .hero h1{
-font-size:24px;
+font-size:26px;
 margin-bottom:10px;
 }
 
 .hero p{
-font-size:14px;
+font-size:15px;
 color:#475569;
+}
+
+/* BENEFÍCIOS */
+.benefits{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
+margin-top:25px;
+}
+
+.box{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.05);
+font-size:14px;
 }
 
 /* BOTÃO */
 .btn{
-margin-top:20px;
-padding:15px 25px;
+margin-top:25px;
+padding:16px 30px;
 border:none;
-border-radius:8px;
-background:#16a34a;
+border-radius:10px;
+background:#2563eb;
 color:white;
-font-weight:600;
+font-weight:700;
 font-size:16px;
 cursor:pointer;
 }
 
 /* SEÇÕES */
 .section{
-margin-top:20px;
+margin-top:25px;
 background:white;
 padding:20px;
 border-radius:12px;
 }
 
+/* FAQ */
+.faq{
+margin-top:20px;
+}
+
+.faq h3{
+font-size:15px;
+margin-bottom:5px;
+}
+
 /* FOOTER */
 .footer{
-margin-top:30px;
+margin-top:40px;
 text-align:center;
 font-size:12px;
 color:#64748b;
@@ -98,45 +124,67 @@ margin:0 5px;
 <body>
 
 <div class="header">
-Portal de Consulta Online
+Portal Informativo Online
 </div>
 
 <div class="container">
 
+<!-- HERO -->
 <div class="hero">
 
-<h1>Consulta de Informações Disponíveis</h1>
+<h1>Acesse Informações Disponíveis Online</h1>
 
 <p>
-Acesse serviços e informações públicas disponíveis online de forma simples e rápida.
+Consulte conteúdos e serviços disponíveis na internet de forma simples, segura e transparente.
 </p>
 
+<div class="benefits">
+<div class="box">✔ Acesso rápido a informações públicas</div>
+<div class="box">✔ Plataforma simples e intuitiva</div>
+<div class="box">✔ Redirecionamento seguro</div>
+</div>
+
 <button class="btn" onclick="acessar()">
-Acessar Plataforma
+Continuar para acesso
 </button>
 
 </div>
 
+<!-- SOBRE -->
 <div class="section">
-<h2>Sobre o serviço</h2>
+<h2>Como funciona</h2>
 <p>
-Este portal atua como intermediador de acesso a plataformas externas.  
-Não garantimos resultados específicos e não somos afiliados a órgãos oficiais.
+Este portal atua como um intermediador que organiza e facilita o acesso a conteúdos disponíveis em plataformas externas.  
+Ao continuar, você poderá ser direcionado para parceiros que oferecem serviços online.
 </p>
 </div>
 
+<!-- TRANSPARÊNCIA -->
 <div class="section">
-<h2>Importante</h2>
+<h2>Transparência</h2>
 <p>
-Ao continuar, você poderá ser redirecionado para um site parceiro.  
-Recomendamos a leitura dos termos e políticas antes de prosseguir.
+Não somos afiliados a órgãos oficiais e não garantimos resultados específicos.  
+Nosso objetivo é facilitar o acesso à informação.
 </p>
 </div>
 
+<!-- FAQ -->
+<div class="section faq">
+<h2>Dúvidas frequentes</h2>
+
+<h3>É gratuito?</h3>
+<p>O acesso ao portal é gratuito, porém serviços externos podem ter condições próprias.</p>
+
+<h3>É seguro?</h3>
+<p>Utilizamos boas práticas de navegação, mas recomendamos sempre verificar os sites acessados.</p>
+
+</div>
+
+<!-- FOOTER -->
 <div class="footer">
-© 2026 Portal Online |
-<a href="privacidade.html">Política de Privacidade</a> |
-<a href="termos.html">Termos de Uso</a> |
+© 2026 Portal Informativo |
+<a href="privacidade.html">Privacidade</a> |
+<a href="termos.html">Termos</a> |
 <a href="contato.html">Contato</a>
 </div>
 
